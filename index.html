@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Depreciação</title>
+    <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/despesas.png" alt="img.menu">
+        <h1>Depreciação</h1>
+    </header>
+    <main class="main">
+        <div class="container1">
+            <div class="box-text">
+                <div class="text text-left">
+                    <h1>O que é depreciação?</h1>
+                    <p>É o processo de desvalorização de um ativo tangível ao longo de sua vida útil. </p>
+                    <br>
+                    <h1>Os principais motivos da depreciação:</h1>
+                    <ul>
+                        <p>
+                            <li>Desgaste natural</li>
+                            <li>Desgaste pelo uso</li>
+                            <li>Obsolescência</li>
+                        </p>
+                    </ul>
+                </div>
+                <br>
+                <div class="text text-right">
+                    <h1>Método mais utilizado:</h1>
+                    <p>Considerado o método mais simples, a depreciação linear acontece de maneira uniforme, com a mesma taxa de depreciação anual ao longo da vida útil do ativo imobilizado.</p>
+                <br>
+                    <h1>Como calcular:</h1>
+                    <p>Depreciação = Custo de Aquisição (CA) &#8211; Valor Residual (VR) x Taxa de depreciação correspondente.
+                        <ul>
+                            <li>Depreciação = CA &#8211; VR x T</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="imagem">
+                <img src="img/depreciacao.png" alt="img.deprec">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="calculer">
+                    <h1>Calculadora de depreciação</h1>
+                    <p>Método de depreciação linear</p>
+                    <div class="enter">
+                        <div>
+                            <label for="custatv">Custo do Ativo</label>
+                            <input type="number" name="" id="custatv">
+                        </div>
+                        <div>
+                            <label for="vlresd">Valor Residual</label>
+                            <input type="number" name="" id="vlresd">
+                        </div>
+                        <div>
+                            <label for="anos">Tempo de vida útil</label>
+                            <input type="number" name="" placeholder="anos" id="anos">
+                        </div>
+                        <div>
+                            <label for="meses">Tempo de uso</label>
+                            <input type="number"  placeholder="meses" name="" id="meses">
+                        </div>
+                        <div>
+                            <label for="txdep">Taxa de depreciação</label>
+                            <input type="number" name="" id="txdep">
+                        </div>
+                    </div>
+                    <button type="button" class="button" id="calcular" onclick="deprec()">Calcular</button>
+            </div>
+            <div class="result">
+                <h1>Resultado</h1>
+                <div class="resu" id="res">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright - Oliva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
